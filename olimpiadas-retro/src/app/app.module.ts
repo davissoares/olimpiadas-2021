@@ -15,6 +15,8 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { ModalidadesPageComponent } from './components/modalidades-page/modalidades-page.component';
 import { RankingPageComponent } from './components/ranking-page/ranking-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RankingcardComponent } from './components/rankingcard/rankingcard.component';
+import {MatCardModule} from '@angular/material/card';
 import {MatStepperModule} from '@angular/material/stepper';
 
 
@@ -24,7 +26,9 @@ import {MatStepperModule} from '@angular/material/stepper';
     MenuTemplateComponent,
     HomePageComponent,
     ModalidadesPageComponent,
-    RankingPageComponent
+    RankingPageComponent,
+    RankingcardComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -37,6 +41,7 @@ import {MatStepperModule} from '@angular/material/stepper';
     MatIconModule,
     MatListModule,
     HttpClientModule,
+    MatCardModule,
     MatStepperModule,
   ],
   providers: [],

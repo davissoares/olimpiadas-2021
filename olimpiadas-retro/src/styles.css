@@ -1,4 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Configuraçoes tamanho de telas */
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%; /* 15px */
+  }
+  #column-resgister {
+    border-right: 0.5px solid black;
+  }
+}
+
+@media (max-width: 990px) {
+  html {
+    font-size: 87.5%; /* 14px */
+  }
+
+  #column-resgister {
+    border-right: 0px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 75%; /* 12px */
+  }
+}
+
+@media (max-width: 590px) {
+  :root {
+    font-size: 62.25%; /* 10px */
+  }
+}

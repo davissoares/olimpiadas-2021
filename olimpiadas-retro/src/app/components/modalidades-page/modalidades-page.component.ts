@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApimodalidadeService } from 'src/app/services/apimodalidade.service';
+import { ModalidadesModel } from 'src/app/services/modalidades-model';
 
 @Component({
   selector: 'app-modalidades-page',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalidadesPageComponent implements OnInit {
 
-  constructor() { }
+  listaModalidades: ModalidadesModel[] = [];
+
+  constructor(public modalidadesApi: ApimodalidadeService) { }
 
   ngOnInit(): void {
+    this.modalidadesApi.get().subscribe({
+      next: (retornoApi) => {
+        this.listaModalidades = retornoApi;
+      }
+    });
   }
-
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiRankingService } from 'src/app/services/apiranking.service';
+import { RankingModel } from 'src/app/services/rankingmodel';
 
 @Component({
   selector: 'app-ranking-page',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RankingPageComponent implements OnInit {
 
-  constructor() { }
+  listaRankings: RankingModel[] = [];
+
+  constructor( public apiRanking: ApiRankingService) { }
 
   ngOnInit(): void {
+    this.getRankings()
   }
 
+  getRankings():void {
+    this.apiRanking.get().subscribe({
+      next: (data) => {
+        this.listaRankings = data;
+      }
+    })
+  }
 }

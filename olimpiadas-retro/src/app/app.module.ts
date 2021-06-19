@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,6 +16,9 @@ import { RankingPageComponent } from './components/ranking-page/ranking-page.com
 import { HttpClientModule } from '@angular/common/http';
 import { ModalidadeCardComponent } from './components/modalidade-card/modalidade-card.component';
 import { MatCardModule } from '@angular/material/card';
+import { RankingcardComponent } from './components/rankingcard/rankingcard.component';
+import { MatStepperModule } from '@angular/material/stepper';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { MatCardModule } from '@angular/material/card';
     HomePageComponent,
     ModalidadesPageComponent,
     RankingPageComponent,
-    ModalidadeCardComponent
+    ModalidadeCardComponent,
+    RankingcardComponent
+
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,8 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatListModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

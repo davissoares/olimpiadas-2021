@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { RankingModel } from './rankingmodel';
+import { RankingModel } from './rankingModel';
 import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'

@@ -5,5 +5,6 @@ export interface RankingModel {
   ouro: number;
   pais: string;
   prata: number;
+  posicao: number;
 
 }

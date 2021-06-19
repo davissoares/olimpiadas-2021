@@ -1,0 +1,17 @@
+img {
+    width: 20%;
+    border-radius: 5px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+​ .info .quantidadeProvas {
+    font-weight: bold;
+}
+
+span {
+    margin-left: 10px;
+}

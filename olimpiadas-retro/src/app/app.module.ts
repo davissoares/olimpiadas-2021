@@ -15,6 +15,8 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { ModalidadesPageComponent } from './components/modalidades-page/modalidades-page.component';
 import { RankingPageComponent } from './components/ranking-page/ranking-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalidadeCardComponent } from './components/modalidade-card/modalidade-card.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     MenuTemplateComponent,
     HomePageComponent,
     ModalidadesPageComponent,
-    RankingPageComponent
+    RankingPageComponent,
+    ModalidadeCardComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

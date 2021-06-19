@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiRankingService } from 'src/app/services/apiranking.service';
-import { RankingModel } from 'src/app/services/rankingmodel';
+import { RankingModel } from 'src/app/services/rankingModel';
 
 @Component({
   selector: 'app-ranking-page',

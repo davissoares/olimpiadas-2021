@@ -15,3 +15,8 @@
   top: 0;
   z-index: 1;
 }
+
+mat-sidenav-content {
+  background-color: #e0e0e0;
+  font-family: "Prompt", sans-serif;
+}

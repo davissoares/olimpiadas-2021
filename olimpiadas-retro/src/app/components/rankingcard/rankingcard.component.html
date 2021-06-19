@@ -1,1 +1,18 @@
-<p>rankingcard works!</p>
+<mat-card>
+
+  <div class="posicao">
+    <p> {{pais?.posicao }}</p>
+    <p> {{pais?.pais}} </p>
+  </div>
+  <div class="pais">
+
+    <img [src]="pais?.bandeira">
+
+
+    <div class="medalhas">
+      <p> Medalhas de ouro: {{pais?.ouro}} </p>
+      <p> Medalhas de prata: {{pais?.prata}} </p>
+      <p> Medalhas de bronze: {{pais?.bronze}} </p>
+    </div>
+  </div>
+</mat-card>

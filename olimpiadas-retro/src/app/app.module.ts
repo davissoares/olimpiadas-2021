@@ -16,7 +16,8 @@ import { ModalidadesPageComponent } from './components/modalidades-page/modalida
 import { RankingPageComponent } from './components/ranking-page/ranking-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RankingcardComponent } from './components/rankingcard/rankingcard.component';
-
+import {MatCardModule} from '@angular/material/card';
+import {MatStepperModule} from '@angular/material/stepper';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { RankingcardComponent } from './components/rankingcard/rankingcard.compo
     MatIconModule,
     MatListModule,
     HttpClientModule,
-
+    MatCardModule,
+    MatStepperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

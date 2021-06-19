@@ -15,6 +15,8 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { ModalidadesPageComponent } from './components/modalidades-page/modalidades-page.component';
 import { RankingPageComponent } from './components/ranking-page/ranking-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import {MatStepperModule} from '@angular/material/stepper';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatStepperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

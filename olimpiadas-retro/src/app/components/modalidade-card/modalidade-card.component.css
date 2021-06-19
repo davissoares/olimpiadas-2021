@@ -3,9 +3,26 @@ img {
     border-radius: 5px;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome {
+    color: white;
+    text-align: center;
+    background-color: #3f51b5;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card-info {
+    display: flex;
+}
+
 .info {
     display: flex;
     flex-direction: row;
+    margin: auto;
 }
 
 ​ .info .quantidade {
@@ -14,4 +31,8 @@ img {
 
 span {
     margin-left: 10px;
+}
+
+.mat-card {
+    margin: 10px 10px;
 }

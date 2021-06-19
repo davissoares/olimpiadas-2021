@@ -1,7 +1,14 @@
 <mat-card>
-    <img [src]="modalidade?.icone"> ​
-    <div class="info">
+
+    <div class="card">
         <span class="nome">{{modalidade?.nome}}</span>
-        <span class="quantidade">Número de Provas: {{modalidade?.quantidadeProvas}}</span>
+        <div class="card-info">
+            <img [src]="modalidade?.icone"> ​
+            <div class="info">
+                <span class="quantidade">Número de Provas: {{modalidade?.quantidadeProvas}}</span>
+            </div>
+        </div>
+
     </div>
+
 </mat-card>

@@ -1,5 +1,28 @@
 img {
-
   width: 100%;
+}
 
+.title {
+  margin-top: 20px;
+  text-align: center;
+}
+
+mat-vertical-stepper {
+  width: 90%;
+  margin: 0 auto;
+
+  background: linear-gradient (white, #e0e0e0);
+  border-radius: 5px;
+}
+
+.head {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h2,
+h1,
+.subtitle {
+  text-align: center;
+  margin-top: 10px;
 }

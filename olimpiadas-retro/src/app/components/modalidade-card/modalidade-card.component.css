@@ -1,38 +1,39 @@
 img {
-    width: 20%;
-    border-radius: 5px;
+  width: 20%;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .nome {
-    color: white;
-    text-align: center;
-    background-color: #3f51b5;
-    border-radius: 5px 5px 0px 0px;
+  color: white;
+  text-align: center;
+  background-color: #3f51b5;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .card-info {
-    display: flex;
+  display: flex;
 }
 
 .info {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
 }
 
 ​ .info .quantidade {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 span {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .mat-card {
-    margin: 10px 10px;
+  margin: 10px 10px;
 }
